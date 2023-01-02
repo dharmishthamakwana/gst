@@ -15,11 +15,11 @@ class _HomeState extends State<Home> {
   double i =0;
 
   List c1 = [
-    Color(0xffEEEEEE),
-    Color(0xffEEEEEE),
-    Color(0xffEEEEEE),
-    Color(0xffEEEEEE),
-    Color(0xffEEEEEE),
+    const Color(0xffEEEEEE),
+    const Color(0xffEEEEEE),
+    const Color(0xffEEEEEE),
+    const Color(0xffEEEEEE),
+    const Color(0xffEEEEEE),
   ];
 
   @override
@@ -34,15 +34,15 @@ class _HomeState extends State<Home> {
               Container(
                 height: 40,
                 decoration: BoxDecoration(
-                    color: Color(0xffEEEEEE),
+                    color: const Color(0xffEEEEEE),
                     borderRadius: BorderRadius.circular(8)),
                 child: Padding(
                   padding: const EdgeInsets.all(10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("ORIGINAL PRICE", style: TextStyle(fontSize: 25)),
-                      Align(alignment: Alignment.centerRight,child: Text("$OR Rs.", style: TextStyle(fontSize: 25))),
+                      const Text("ORIGINAL PRICE", style: TextStyle(fontSize: 25)),
+                      Align(alignment: Alignment.centerRight,child: Text("$OR Rs.", style: const TextStyle(fontSize: 25))),
                     ],
                   ),
                 ),
@@ -51,12 +51,12 @@ class _HomeState extends State<Home> {
                   child: Container(
                     height: 75,
                     decoration: BoxDecoration(
-                        color: Color(0xffEEEEEE),
+                        color: const Color(0xffEEEEEE),
                         borderRadius: BorderRadius.circular(8)),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Text("GST", style: TextStyle(fontSize: 25)),
+                        const Text("GST", style: TextStyle(fontSize: 25)),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
@@ -64,10 +64,10 @@ class _HomeState extends State<Home> {
                                 onTap: () {
                                   setState(() {
                                     c1[0] = Colors.orange;
-                                    c1[1] = Color(0xffEEEEEE);
-                                    c1[2] = Color(0xffEEEEEE);
-                                    c1[3] = Color(0xffEEEEEE);
-                                    c1[4] = Color(0xffEEEEEE);
+                                    c1[1] = const Color(0xffEEEEEE);
+                                    c1[2] = const Color(0xffEEEEEE);
+                                    c1[3] = const Color(0xffEEEEEE);
+                                    c1[4] = const Color(0xffEEEEEE);
                                     gst = double.parse(OR);
                                     FP = (3 * gst) / 100;
                                     Rate = FP;
@@ -79,10 +79,10 @@ class _HomeState extends State<Home> {
                                 onTap: () {
                                   setState(() {
                                     c1[1] = Colors.orange;
-                                    c1[0] = Color(0xffEEEEEE);
-                                    c1[2] = Color(0xffEEEEEE);
-                                    c1[3] = Color(0xffEEEEEE);
-                                    c1[4] = Color(0xffEEEEEE);
+                                    c1[0] = const Color(0xffEEEEEE);
+                                    c1[2] = const Color(0xffEEEEEE);
+                                    c1[3] = const Color(0xffEEEEEE);
+                                    c1[4] = const Color(0xffEEEEEE);
                                     gst = double.parse(OR);
                                     FP = (5 * gst) / 100;
                                     Rate = FP;
@@ -94,10 +94,10 @@ class _HomeState extends State<Home> {
                                 onTap: () {
                                   setState(() {
                                     c1[2] = Colors.orange;
-                                    c1[1] = Color(0xffEEEEEE);
-                                    c1[0] = Color(0xffEEEEEE);
-                                    c1[3] = Color(0xffEEEEEE);
-                                    c1[4] = Color(0xffEEEEEE);
+                                    c1[1] = const Color(0xffEEEEEE);
+                                    c1[0] = const Color(0xffEEEEEE);
+                                    c1[3] = const Color(0xffEEEEEE);
+                                    c1[4] = const Color(0xffEEEEEE);
                                     gst = double.parse(OR);
                                     FP = (12 * gst) / 100;
                                     Rate = FP;
@@ -109,10 +109,10 @@ class _HomeState extends State<Home> {
                                 onTap: () {
                                   setState(() {
                                     c1[3] = Colors.orange;
-                                    c1[1] = Color(0xffEEEEEE);
-                                    c1[2] = Color(0xffEEEEEE);
-                                    c1[0] = Color(0xffEEEEEE);
-                                    c1[4] = Color(0xffEEEEEE);
+                                    c1[1] = const Color(0xffEEEEEE);
+                                    c1[2] = const Color(0xffEEEEEE);
+                                    c1[0] = const Color(0xffEEEEEE);
+                                    c1[4] = const Color(0xffEEEEEE);
                                     gst = double.parse(OR);
                                     FP = (18 * gst) / 100;
                                     Rate = FP;
@@ -124,10 +124,10 @@ class _HomeState extends State<Home> {
                                 onTap: () {
                                   setState(() {
                                     c1[4] = Colors.orange;
-                                    c1[1] = Color(0xffEEEEEE);
-                                    c1[2] = Color(0xffEEEEEE);
-                                    c1[3] = Color(0xffEEEEEE);
-                                    c1[0] = Color(0xffEEEEEE);
+                                    c1[1] = const Color(0xffEEEEEE);
+                                    c1[2] = const Color(0xffEEEEEE);
+                                    c1[3] = const Color(0xffEEEEEE);
+                                    c1[0] = const Color(0xffEEEEEE);
                                     gst = double.parse(OR);
                                     FP = (28 * gst) / 100;
                                     Rate = FP;
@@ -143,16 +143,16 @@ class _HomeState extends State<Home> {
               Container(
                 height: 40,
                 decoration: BoxDecoration(
-                    color: Color(0xffEEEEEE),
+                    color: const Color(0xffEEEEEE),
                     borderRadius: BorderRadius.circular(8)),
                 child: Padding(
                   padding: const EdgeInsets.all(10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("FINAL PRICE", style: TextStyle(fontSize: 25)),
+                      const Text("FINAL PRICE", style: TextStyle(fontSize: 25)),
                       //SizedBox(width: 75,),
-                      Align(alignment: Alignment.centerRight,child: Text("$FP Rs.", style: TextStyle(fontSize: 25))),
+                      Align(alignment: Alignment.centerRight,child: Text("$FP Rs.", style: const TextStyle(fontSize: 25))),
                     ],
                   ),
                 ),
@@ -161,17 +161,17 @@ class _HomeState extends State<Home> {
                 width: 250,
                 height: 75,
                 decoration: BoxDecoration(
-                    color: Color(0xffEEEEEE),
+                    color: const Color(0xffEEEEEE),
                     borderRadius: BorderRadius.circular(8)),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Text("CGST/SGST", style: TextStyle(fontSize: 25)),
-                    Text("${Rate / 2}", style: TextStyle(fontSize: 25)),
+                    const Text("GST/SGST", style: TextStyle(fontSize: 25)),
+                    Text("${Rate / 2}", style: const TextStyle(fontSize: 25)),
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Row(
@@ -243,7 +243,7 @@ class _HomeState extends State<Home> {
                       decoration: BoxDecoration(
                           color: Colors.orange,
                           borderRadius: BorderRadius.circular(50)),
-                      child: Text("AC",
+                      child: const Text("AC",
                           style: TextStyle(fontSize: 30, color: Colors.white)),
                     ),
                   ),
@@ -318,7 +318,7 @@ class _HomeState extends State<Home> {
                       decoration: BoxDecoration(
                           color: Colors.orange,
                           borderRadius: BorderRadius.circular(50)),
-                      child: Icon(Icons.backspace_outlined,
+                      child: const Icon(Icons.backspace_outlined,
                           color: Colors.white, size: 25),
                     ),
                   ),
@@ -338,7 +338,7 @@ class _HomeState extends State<Home> {
       decoration:
       BoxDecoration(color: c12, borderRadius: BorderRadius.circular(8)),
       alignment: Alignment.center,
-      child: Text("$data%", style: TextStyle(fontSize: 18)),
+      child: Text("$data%", style: const TextStyle(fontSize: 18)),
     );
   }
 
@@ -349,7 +349,7 @@ class _HomeState extends State<Home> {
         height: 75,
         width: 75,
         alignment: Alignment.center,
-        child: Text("$data", style: TextStyle(fontSize: 50)),
+        child: Text(data, style: const TextStyle(fontSize: 50)),
       ),
     );
   }
